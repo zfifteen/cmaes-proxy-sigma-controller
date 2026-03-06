@@ -391,6 +391,11 @@ Invariants:
 | `fail_policy` | `fail_fast` |
 | `trace_mode` | `hybrid` |
 
+Global-default policy note:
+
+1. These defaults are conservative initialization values for v1.
+2. Profile-specific tuning may adjust `sigma_max_ratio` and/or `k_up` during acceptance testing when empirical behavior indicates ceiling-dominated dynamics.
+
 ### 12.2 Profile defaults (numeric, implementation-locked)
 
 | `profile_id` | `mode` | `k_down` | `r_min` | `snr_down` | `snr_up` | `warmup_generations` | `floor_streak_constrained` | `recovery_boost` | `recovery_cooldown_gens` |
@@ -472,6 +477,9 @@ Run summaries + traces must be sufficient to compute:
 - `ellipsoid` default config enforces `r_min <= 0.15`.
 - `rosenbrock` default resolves to `mode=pass_through`; `rosenbrock_active_tight` is opt-in.
 - `unknown` default resolves to `mode=pass_through`.
+
+6. **Acceptance coverage for sphere parity**
+- Automated hypothesis validation must include criterion #2 (`pass_through` sphere parity), or the run must emit a documented manual verification artifact proving criterion #2 was checked and passed.
 
 ## 15. Implementation checklist (decision-complete)
 

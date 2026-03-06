@@ -1,0 +1,6 @@
+{
+  "command": "bash scripts/run_descent_geometry_suite.sh",
+  "log_path": "artifacts/runs/descent-geometry/suite.log",
+  "pid": 37799,
+  "started_at_utc": "2026-03-06T05:21:47.806952+00:00"
+}

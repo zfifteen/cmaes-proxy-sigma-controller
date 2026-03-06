@@ -1,0 +1,18 @@
+{
+  "config_path": "experiments/config/descent_geom_dense_hybrid.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_proxy_runs": 115200,
+    "n_trace_available_runs": 46080,
+    "n_variants": 64,
+    "trace_coverage": 0.4
+  },
+  "created_at_utc": "2026-03-06T06:59:53.052134+00:00",
+  "files": {
+    "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_cell_metrics.csv",
+    "descent_geometry_summary_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_geometry_summary.json",
+    "descent_run_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_run_metrics.csv",
+    "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_variant_metrics.csv"
+  },
+  "runs_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/runs_long.csv"
+}

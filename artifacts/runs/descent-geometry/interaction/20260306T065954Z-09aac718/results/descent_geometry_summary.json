@@ -1,0 +1,18 @@
+{
+  "config_path": "experiments/config/descent_geom_interaction_hybrid.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_proxy_runs": 28800,
+    "n_trace_available_runs": 11520,
+    "n_variants": 16,
+    "trace_coverage": 0.4
+  },
+  "created_at_utc": "2026-03-06T07:25:58.419934+00:00",
+  "files": {
+    "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_cell_metrics.csv",
+    "descent_geometry_summary_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_geometry_summary.json",
+    "descent_run_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_run_metrics.csv",
+    "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_variant_metrics.csv"
+  },
+  "runs_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/runs_long.csv"
+}

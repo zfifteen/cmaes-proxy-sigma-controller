@@ -1,0 +1,18 @@
+{
+  "config_path": "experiments/config/descent_geom_anchors_full.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_proxy_runs": 7200,
+    "n_trace_available_runs": 7200,
+    "n_variants": 10,
+    "trace_coverage": 1.0
+  },
+  "created_at_utc": "2026-03-06T07:34:37.213051+00:00",
+  "files": {
+    "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_cell_metrics.csv",
+    "descent_geometry_summary_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_geometry_summary.json",
+    "descent_run_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_run_metrics.csv",
+    "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_variant_metrics.csv"
+  },
+  "runs_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/runs_long.csv"
+}

@@ -1,0 +1,34 @@
+{
+  "created_at_utc": "2026-03-06T07:34:37.901364+00:00",
+  "dry_run": false,
+  "run_base": "artifacts/runs/descent-geometry",
+  "stages": [
+    {
+      "config_path": "experiments/config/descent_geom_dense_hybrid.yaml",
+      "figures_dir": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/figures",
+      "results_dir": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results",
+      "run_id": "20260306T052148Z-cdeecf15",
+      "run_root": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15",
+      "stage": "dense",
+      "status": "ok"
+    },
+    {
+      "config_path": "experiments/config/descent_geom_interaction_hybrid.yaml",
+      "figures_dir": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/figures",
+      "results_dir": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results",
+      "run_id": "20260306T065954Z-09aac718",
+      "run_root": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718",
+      "stage": "interaction",
+      "status": "ok"
+    },
+    {
+      "config_path": "experiments/config/descent_geom_anchors_full.yaml",
+      "figures_dir": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/figures",
+      "results_dir": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results",
+      "run_id": "20260306T072559Z-ff541e20",
+      "run_root": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20",
+      "stage": "anchors_full",
+      "status": "ok"
+    }
+  ]
+}

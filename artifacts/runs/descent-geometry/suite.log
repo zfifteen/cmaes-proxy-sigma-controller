@@ -1,0 +1,139 @@
+[suite] stage=dense config=experiments/config/descent_geom_dense_hybrid.yaml
+[suite] stage=dense run_id=20260306T052148Z-cdeecf15
+[suite] stage=dense run_root=artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15
+{
+  "manifest_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/manifest.json",
+  "run_id": "20260306T052148Z-cdeecf15",
+  "runs_long_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/runs_long.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/analyze.py:36: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+2026-03-06 01:58:26.395 Python[8815:34570015] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /var/folders/k_/spz3zlj566sc4qh29g0tk6jh0000gn/T/org.python.python.savedState
+{
+  "analysis_manifest_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/analysis_manifest.json",
+  "behavior_aggregate_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/behavior_aggregate.csv",
+  "cell_stats_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/cell_stats.csv",
+  "figure_behavior_floor": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/figures/behavior_fraction_at_floor_bar.png",
+  "figure_behavior_ttf": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/figures/behavior_time_to_first_floor_bar.png",
+  "figure_method_delta": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/figures/method_median_delta_bar.png",
+  "figure_method_win_rate": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/figures/method_win_rate_bar.png",
+  "method_aggregate_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/method_aggregate.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/pairwise.py:51: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_csv)
+{
+  "pairwise_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/pairwise_proxy_sigma_controller_geomdense__sigma_down_factor_0p9__sigma_min_ratio_0p1_vs_vanilla_cma.csv",
+  "pairwise_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/pairwise_proxy_sigma_controller_geomdense__sigma_down_factor_0p9__sigma_min_ratio_0p1_vs_vanilla_cma.json"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/hypotheses.py:183: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  "runs_long": pd.read_csv(runs_csv),
+{
+  "hypothesis_checks_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/hypothesis_checks.json"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/findings.py:113: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+{
+  "findings_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/findings.json",
+  "findings_md": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/findings.md"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/descent_geometry.py:337: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+{
+  "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_cell_metrics.csv",
+  "descent_geometry_summary_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_geometry_summary.json",
+  "descent_run_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_run_metrics.csv",
+  "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/descent_variant_metrics.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/scripts/verify_experiment_artifacts.py:142: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(path)
+[verify-experiment] PASS: artifacts, schemas, and findings links validated
+[suite] stage=interaction config=experiments/config/descent_geom_interaction_hybrid.yaml
+[suite] stage=interaction run_id=20260306T065954Z-09aac718
+[suite] stage=interaction run_root=artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718
+{
+  "manifest_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/manifest.json",
+  "run_id": "20260306T065954Z-09aac718",
+  "runs_long_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/runs_long.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/analyze.py:36: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+2026-03-06 02:25:30.572 Python[54774:35143141] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /var/folders/k_/spz3zlj566sc4qh29g0tk6jh0000gn/T/org.python.python.savedState
+{
+  "analysis_manifest_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/analysis_manifest.json",
+  "behavior_aggregate_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/behavior_aggregate.csv",
+  "cell_stats_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/cell_stats.csv",
+  "figure_behavior_floor": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/figures/behavior_fraction_at_floor_bar.png",
+  "figure_behavior_ttf": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/figures/behavior_time_to_first_floor_bar.png",
+  "figure_method_delta": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/figures/method_median_delta_bar.png",
+  "figure_method_win_rate": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/figures/method_win_rate_bar.png",
+  "method_aggregate_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/method_aggregate.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/pairwise.py:51: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_csv)
+{
+  "pairwise_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/pairwise_proxy_sigma_controller_int_k090_r010_t008_025_vs_vanilla_cma.csv",
+  "pairwise_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/pairwise_proxy_sigma_controller_int_k090_r010_t008_025_vs_vanilla_cma.json"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/hypotheses.py:183: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  "runs_long": pd.read_csv(runs_csv),
+{
+  "hypothesis_checks_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/hypothesis_checks.json"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/findings.py:113: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+{
+  "findings_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/findings.json",
+  "findings_md": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/findings.md"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/experiments/descent_geometry.py:337: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  runs_df = pd.read_csv(runs_path)
+{
+  "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_cell_metrics.csv",
+  "descent_geometry_summary_json": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_geometry_summary.json",
+  "descent_run_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_run_metrics.csv",
+  "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/interaction/20260306T065954Z-09aac718/results/descent_variant_metrics.csv"
+}
+/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/scripts/verify_experiment_artifacts.py:142: DtypeWarning: Columns (31) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(path)
+[verify-experiment] PASS: artifacts, schemas, and findings links validated
+[suite] stage=anchors_full config=experiments/config/descent_geom_anchors_full.yaml
+[suite] stage=anchors_full run_id=20260306T072559Z-ff541e20
+[suite] stage=anchors_full run_root=artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20
+{
+  "manifest_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/manifest.json",
+  "run_id": "20260306T072559Z-ff541e20",
+  "runs_long_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/runs_long.csv"
+}
+2026-03-06 02:34:13.235 Python[96904:35896754] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /var/folders/k_/spz3zlj566sc4qh29g0tk6jh0000gn/T/org.python.python.savedState
+{
+  "analysis_manifest_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/analysis_manifest.json",
+  "behavior_aggregate_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/behavior_aggregate.csv",
+  "cell_stats_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/cell_stats.csv",
+  "figure_behavior_floor": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/figures/behavior_fraction_at_floor_bar.png",
+  "figure_behavior_ttf": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/figures/behavior_time_to_first_floor_bar.png",
+  "figure_method_delta": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/figures/method_median_delta_bar.png",
+  "figure_method_win_rate": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/figures/method_win_rate_bar.png",
+  "method_aggregate_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/method_aggregate.csv"
+}
+{
+  "pairwise_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/pairwise_proxy_sigma_controller_anchor_k090_r010_vs_vanilla_cma.csv",
+  "pairwise_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/pairwise_proxy_sigma_controller_anchor_k090_r010_vs_vanilla_cma.json"
+}
+{
+  "hypothesis_checks_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/hypothesis_checks.json"
+}
+{
+  "findings_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/findings.json",
+  "findings_md": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/findings.md"
+}
+{
+  "descent_cell_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_cell_metrics.csv",
+  "descent_geometry_summary_json": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_geometry_summary.json",
+  "descent_run_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_run_metrics.csv",
+  "descent_variant_metrics_csv": "artifacts/runs/descent-geometry/anchors-full/20260306T072559Z-ff541e20/results/descent_variant_metrics.csv"
+}
+[verify-experiment] PASS: artifacts, schemas, and findings links validated
+{
+  "suite_manifest_json": "artifacts/runs/descent-geometry/suite_manifest.json"
+}
+[suite] completed

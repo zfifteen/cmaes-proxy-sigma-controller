@@ -1,0 +1,35 @@
+{
+  "config_hash": "cdeecf158298fc977a4d29ec7074b9365b952ec74c7f53ece3746aad75b7b887",
+  "config_path": "experiments/config/descent_geom_dense_hybrid.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_seeds": 50,
+    "n_methods": 2,
+    "status_by_phase": [
+      {
+        "count": 117000,
+        "phase": "eval",
+        "status": "ok"
+      }
+    ],
+    "total_runs": 117000
+  },
+  "created_at_utc": "2026-03-06T05:21:48.612511+00:00",
+  "files": {
+    "manifest_json": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/manifest.json",
+    "runs_long_csv": "artifacts/runs/descent-geometry/dense/20260306T052148Z-cdeecf15/results/runs_long.csv"
+  },
+  "git_commit": "bf9e159",
+  "methods": [
+    "vanilla_cma",
+    "proxy_sigma_controller"
+  ],
+  "notes": {
+    "execution_mode": "sequential_only_v1",
+    "fairness_mode": "equal_eval_budget"
+  },
+  "reference_method": "vanilla_cma",
+  "run_id": "20260306T052148Z-cdeecf15",
+  "run_scope": "descent_geom_dense_hybrid",
+  "workers": 1
+}

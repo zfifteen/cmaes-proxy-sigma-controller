@@ -1,0 +1,25 @@
+{
+  "title": "cmaes-proxy-sigma-controller",
+  "description": "Mechanism-focused, external sigma control layer for CMA-ES with deterministic policy behavior and occupancy telemetry.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "VelocityWorks"
+    }
+  ],
+  "keywords": [
+    "cma-es",
+    "sigma-control",
+    "optimization",
+    "reproducibility",
+    "telemetry"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/zfifteen/cmaes-proxy-sigma-controller",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

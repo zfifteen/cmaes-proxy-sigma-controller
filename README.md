@@ -69,4 +69,13 @@ Run-level proxy fields include:
 - `proxy_trace_written`
 - `proxy_trace_relpath`
 
-See [TECHNICAL_DESIGN_SPEC.md](/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/TECHNICAL_DESIGN_SPEC.md) and [docs/RUNBOOK.md](/Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller/docs/RUNBOOK.md).
+See [docs/TECHNICAL_DESIGN_SPEC.md](docs/TECHNICAL_DESIGN_SPEC.md) and [docs/RUNBOOK.md](docs/RUNBOOK.md).
+
+## Publication / Citation
+
+- Mechanism-focused technical note: [docs/technical-note/technical_note.md](docs/technical-note/technical_note.md)
+- Zenodo metadata: [.zenodo.json](.zenodo.json)
+- Citation metadata: [CITATION.cff](CITATION.cff)
+- License: [LICENSE](LICENSE)
+- Deterministic evidence builder: [scripts/build_publication_evidence.py](scripts/build_publication_evidence.py)
+- Evidence bundle manifest: [release-assets/v0.1.0/evidence_manifest.json](release-assets/v0.1.0/evidence_manifest.json)

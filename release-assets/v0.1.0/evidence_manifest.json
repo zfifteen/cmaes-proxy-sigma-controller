@@ -1,0 +1,31 @@
+{
+  "commands": {
+    "pytest": "python -m pytest",
+    "reference_runs": "python scripts/build_publication_evidence.py"
+  },
+  "environment": {
+    "platform": "macOS-26.3-arm64-arm-64bit-Mach-O",
+    "python_version": "3.13.0"
+  },
+  "generator": "scripts/build_publication_evidence.py",
+  "git": {
+    "commit": "dd2516c8bb1fca1b195d8e6badd5e9a939f11655",
+    "commit_date_utc": "2026-03-05T16:45:52-05:00",
+    "commit_short": "dd2516c",
+    "dirty_worktree": true
+  },
+  "outputs": [
+    {
+      "path": "release-assets/v0.1.0/reference_runs.csv",
+      "rows": 16,
+      "sha256": "a90c1e5f1d63c09fbf5b9360ec4b2de85f506dc12e3310e47d095db5249b9171"
+    },
+    {
+      "path": "release-assets/v0.1.0/test_gate_summary.txt",
+      "sha256": "65ae52c63d63d2f501c25afe29d9dadb92536ca1f137ad4e2cbc9bc7c74f5be1"
+    }
+  ],
+  "package_version": "0.1.0",
+  "schema_version": 1,
+  "timestamp_utc": "2026-03-05T16:45:52-05:00"
+}

@@ -1,0 +1,10 @@
+command=python -m pytest
+exit_code=0
+tests_passed=45
+tests_skipped=0
+coverage_total_percent=95.00
+coverage_required_percent=90
+python_version=3.13.0
+platform=macOS-26.3-arm64-arm-64bit-Mach-O
+git_commit=dd2516c8bb1fca1b195d8e6badd5e9a939f11655
+git_commit_date_utc=2026-03-05T16:45:52-05:00

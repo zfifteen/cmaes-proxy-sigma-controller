@@ -1,0 +1,93 @@
+experiment_name: descent_geom_dense_hybrid
+
+matrix:
+  functions: [sphere, rosenbrock, rastrigin, ellipsoid_cond1e6]
+  dimensions: [10, 20, 40]
+  noise_sigmas: [0.0, 0.1, 0.2]
+
+methods:
+  - vanilla_cma
+  - proxy_sigma_controller
+reference_method: vanilla_cma
+
+budget:
+  evals_per_run: 1000
+
+cma:
+  initial_sigma: 2.0
+  base_popsize: 10
+  verbose: -9
+
+proxy_defaults:
+  ema_alpha: 0.2
+  snr_up_threshold: 0.25
+  snr_down_threshold: 0.08
+  sigma_up_factor: 1.03
+  sigma_down_factor: 0.90
+  sigma_min_ratio: 0.10
+  sigma_max_ratio: 10.0
+
+variants: []
+
+sweeps:
+  - sweep_id: geomdense
+    method: proxy_sigma_controller
+    constants:
+      sigma_max_ratio: 10.0
+    grid:
+      sigma_down_factor: [0.86, 0.88, 0.90, 0.93, 0.95, 0.97, 0.98, 0.99]
+      sigma_min_ratio: [0.02, 0.03, 0.05, 0.07, 0.10, 0.15, 0.20, 0.25]
+
+telemetry:
+  proxy_trace_mode: hybrid
+
+seeds:
+  eval: [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009,
+         1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019,
+         1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029,
+         1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039,
+         1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049]
+
+runtime:
+  parallel_workers: 1
+
+analysis:
+  default_pairwise:
+    method_a: vanilla_cma
+    method_b: proxy_sigma_controller:geomdense__sigma_down_factor_0p9__sigma_min_ratio_0p1
+
+hypotheses:
+  checks:
+    - id: dense_baseline_nonpositive_delta
+      type: metric_threshold
+      dataset: method_aggregate
+      where:
+        method_instance: proxy_sigma_controller:geomdense__sigma_down_factor_0p9__sigma_min_ratio_0p1
+      metric: median_of_cell_median_delta
+      aggregate: first
+      op: "<="
+      threshold: 0.0
+
+    - id: dense_winrate_delta_correlation
+      type: correlation_threshold
+      dataset: method_aggregate
+      where:
+        method: proxy_sigma_controller
+      x_metric: mean_win_rate
+      y_metric: median_of_cell_median_delta
+      method: pearson
+      op: "<="
+      threshold: -0.20
+
+    - id: dense_baseline_behavior_rows
+      type: comparative_threshold
+      dataset: behavior_aggregate
+      metric: n_behavior_rows
+      aggregate: first
+      lhs_where:
+        method_instance: proxy_sigma_controller:geomdense__sigma_down_factor_0p9__sigma_min_ratio_0p1
+      rhs_where:
+        method_instance: vanilla_cma
+      op: ">"
+      threshold: 0.0
+

@@ -9,6 +9,7 @@ It is designed to remain outside optimizer internals while providing determinist
 ```bash
 python -m pip install -e .
 python -m pip install -e '.[dev,pycma]'
+python -m pip install -e '.[dev,pycma,experiments]'
 ```
 
 ## Core API
@@ -70,6 +71,29 @@ Run-level proxy fields include:
 - `proxy_trace_relpath`
 
 See [docs/TECHNICAL_DESIGN_SPEC.md](docs/TECHNICAL_DESIGN_SPEC.md) and [docs/RUNBOOK.md](docs/RUNBOOK.md).
+
+## Experiment Pipeline
+
+Research pipeline entrypoints (outside CI):
+
+```bash
+python -m experiments.run --config experiments/config/smoke.yaml --outdir artifacts/runs/smoke/<RUN_ID>/results --workers 1
+python -m experiments.analyze --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --outdir artifacts/runs/smoke/<RUN_ID>/results --figdir artifacts/runs/smoke/<RUN_ID>/figures
+python -m experiments.pairwise --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --method-a vanilla_cma --method-b proxy_sigma_controller --outdir artifacts/runs/smoke/<RUN_ID>/results
+python -m experiments.hypotheses --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --cell-stats artifacts/runs/smoke/<RUN_ID>/results/cell_stats.csv --method-aggregate artifacts/runs/smoke/<RUN_ID>/results/method_aggregate.csv --behavior-aggregate artifacts/runs/smoke/<RUN_ID>/results/behavior_aggregate.csv --config experiments/config/smoke.yaml --outdir artifacts/runs/smoke/<RUN_ID>/results
+python -m experiments.findings --results-dir artifacts/runs/smoke/<RUN_ID>/results --figdir artifacts/runs/smoke/<RUN_ID>/figures
+```
+
+Wrapper scripts:
+- `scripts/run_smoke_pipeline.sh`
+- `scripts/run_high_rigor_pipeline.sh`
+- `scripts/run_sensitivity_pipeline.sh`
+
+Contract reference:
+- `docs/EXPERIMENT_PIPELINE.md`
+
+Artifact verifier:
+- `python scripts/verify_experiment_artifacts.py --results-dir ... --figdir ... --config ... --require-pairwise`
 
 ## Publication / Citation
 

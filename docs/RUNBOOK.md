@@ -4,7 +4,7 @@
 
 ```bash
 cd /Users/velocityworks/IdeaProjects/cmaes-proxy-sigma-controller
-python -m pip install -e '.[dev,pycma]'
+python -m pip install -e '.[dev,pycma,experiments]'
 ```
 
 ## Test Gates
@@ -59,3 +59,33 @@ PY
 
 - `proxy_schema_version` is major-only and currently `1`.
 - additive optional telemetry changes do not bump schema integer.
+
+## Experiment Pipeline
+
+Run wrappers:
+
+```bash
+bash scripts/run_smoke_pipeline.sh
+bash scripts/run_high_rigor_pipeline.sh
+bash scripts/run_sensitivity_pipeline.sh
+```
+
+Manual entrypoints:
+
+```bash
+python -m experiments.run --config experiments/config/smoke.yaml --outdir artifacts/runs/smoke/<RUN_ID>/results --workers 1
+python -m experiments.analyze --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --outdir artifacts/runs/smoke/<RUN_ID>/results --figdir artifacts/runs/smoke/<RUN_ID>/figures
+python -m experiments.pairwise --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --method-a vanilla_cma --method-b proxy_sigma_controller --outdir artifacts/runs/smoke/<RUN_ID>/results
+python -m experiments.hypotheses --runs artifacts/runs/smoke/<RUN_ID>/results/runs_long.csv --cell-stats artifacts/runs/smoke/<RUN_ID>/results/cell_stats.csv --method-aggregate artifacts/runs/smoke/<RUN_ID>/results/method_aggregate.csv --behavior-aggregate artifacts/runs/smoke/<RUN_ID>/results/behavior_aggregate.csv --config experiments/config/smoke.yaml --outdir artifacts/runs/smoke/<RUN_ID>/results
+python -m experiments.findings --results-dir artifacts/runs/smoke/<RUN_ID>/results --figdir artifacts/runs/smoke/<RUN_ID>/figures
+```
+
+Verify output contracts:
+
+```bash
+python scripts/verify_experiment_artifacts.py \
+  --results-dir artifacts/runs/smoke/<RUN_ID>/results \
+  --figdir artifacts/runs/smoke/<RUN_ID>/figures \
+  --config experiments/config/smoke.yaml \
+  --require-pairwise
+```

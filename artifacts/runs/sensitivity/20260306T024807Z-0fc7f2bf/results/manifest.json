@@ -1,0 +1,35 @@
+{
+  "config_hash": "0fc7f2bf88450ffdae253be0c4c65a53c3db846658f0dc6d962423ec4a858650",
+  "config_path": "experiments/config/sensitivity.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_seeds": 40,
+    "n_methods": 2,
+    "status_by_phase": [
+      {
+        "count": 24480,
+        "phase": "eval",
+        "status": "ok"
+      }
+    ],
+    "total_runs": 24480
+  },
+  "created_at_utc": "2026-03-06T02:48:07.995549+00:00",
+  "files": {
+    "manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/manifest.json",
+    "runs_long_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/runs_long.csv"
+  },
+  "git_commit": "f028511",
+  "methods": [
+    "vanilla_cma",
+    "proxy_sigma_controller"
+  ],
+  "notes": {
+    "execution_mode": "sequential_only_v1",
+    "fairness_mode": "equal_eval_budget"
+  },
+  "reference_method": "vanilla_cma",
+  "run_id": "20260306T024807Z-0fc7f2bf",
+  "run_scope": "sensitivity_pipeline",
+  "workers": 1
+}

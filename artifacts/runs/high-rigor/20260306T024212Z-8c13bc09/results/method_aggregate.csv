@@ -1,0 +1,2 @@
+method,variant_id,method_instance,reference_method_instance,n_cells,median_of_cell_median_delta,mean_win_rate,mean_loss_rate,fraction_cells_median_delta_lt0,cells_q_lt_0_05,best_q_value
+proxy_sigma_controller,,proxy_sigma_controller,vanilla_cma,36,-19.26089838648359,0.5025000000000001,0.4975,0.5833333333333334,34,2.4836243452286515e-17

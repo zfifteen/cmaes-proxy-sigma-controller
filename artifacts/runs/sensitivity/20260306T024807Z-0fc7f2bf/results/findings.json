@@ -1,0 +1,194 @@
+{
+  "analysis_manifest_files": {
+    "behavior_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/behavior_aggregate.csv",
+    "cell_stats_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/cell_stats.csv",
+    "figure_behavior_floor": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_fraction_at_floor_bar.png",
+    "figure_behavior_ttf": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_time_to_first_floor_bar.png",
+    "figure_method_delta": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_median_delta_bar.png",
+    "figure_method_win_rate": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_win_rate_bar.png",
+    "method_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/method_aggregate.csv",
+    "pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma.csv",
+    "pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma.json"
+  },
+  "analysis_manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/analysis_manifest.json",
+  "artifacts": {
+    "analysis_manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/analysis_manifest.json",
+    "behavior_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/behavior_aggregate.csv",
+    "cell_stats_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/cell_stats.csv",
+    "figure_behavior_floor": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_fraction_at_floor_bar.png",
+    "figure_behavior_ttf": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_time_to_first_floor_bar.png",
+    "figure_method_delta": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_median_delta_bar.png",
+    "figure_method_win_rate": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_win_rate_bar.png",
+    "hypothesis_checks_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/hypothesis_checks.json",
+    "manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/manifest.json",
+    "method_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/method_aggregate.csv",
+    "pairwise_json_pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma.json",
+    "runs_long_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/runs_long.csv"
+  },
+  "behavior": {
+    "n_behavior_rows": 23040,
+    "n_methods_with_behavior": 16
+  },
+  "config_hash": "0fc7f2bf88450ffdae253be0c4c65a53c3db846658f0dc6d962423ec4a858650",
+  "config_path": "experiments/config/sensitivity.yaml",
+  "created_at_utc": "2026-03-06T03:08:43.598409+00:00",
+  "execution": {
+    "failed_runs": 0,
+    "ok_runs": 24480,
+    "status_by_phase": [
+      {
+        "count": 24480,
+        "phase": "eval",
+        "status": "ok"
+      }
+    ],
+    "total_runs": 24480
+  },
+  "hypotheses": {
+    "n_checks": 3,
+    "n_errors": 0,
+    "n_failed": 0,
+    "n_passed": 3
+  },
+  "manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/manifest.json",
+  "run_id": "20260306T024807Z-0fc7f2bf",
+  "run_scope": "sensitivity_pipeline",
+  "statistics": {
+    "n_cells": 576,
+    "n_methods": 16,
+    "n_q_lt_0_05": 401,
+    "ranking": [
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 24,
+        "fraction_cells_median_delta_lt0": 0.6666666666666666,
+        "mean_loss_rate": 0.3923611111111111,
+        "mean_win_rate": 0.6076388888888888,
+        "median_of_cell_median_delta": -43.20152853345416,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p93__sigma_min_ratio_0p05",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p93__sigma_min_ratio_0p05"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 22,
+        "fraction_cells_median_delta_lt0": 0.5833333333333334,
+        "mean_loss_rate": 0.4104166666666666,
+        "mean_win_rate": 0.5895833333333333,
+        "median_of_cell_median_delta": -42.85789888172104,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p95__sigma_min_ratio_0p05",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p95__sigma_min_ratio_0p05"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 26,
+        "fraction_cells_median_delta_lt0": 0.7222222222222222,
+        "mean_loss_rate": 0.3645833333333333,
+        "mean_win_rate": 0.6354166666666666,
+        "median_of_cell_median_delta": -41.87873485678836,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p9__sigma_min_ratio_0p05",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p9__sigma_min_ratio_0p05"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 24,
+        "fraction_cells_median_delta_lt0": 0.5555555555555556,
+        "mean_loss_rate": 0.4881944444444444,
+        "mean_win_rate": 0.5118055555555556,
+        "median_of_cell_median_delta": -21.35279998371651,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p93__sigma_min_ratio_0p1",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p93__sigma_min_ratio_0p1"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 25,
+        "fraction_cells_median_delta_lt0": 0.5833333333333334,
+        "mean_loss_rate": 0.4972222222222222,
+        "mean_win_rate": 0.5027777777777778,
+        "median_of_cell_median_delta": -20.475182328151593,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:thctl_005_020",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "thctl_005_020"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 25,
+        "fraction_cells_median_delta_lt0": 0.5555555555555556,
+        "mean_loss_rate": 0.4763888888888888,
+        "mean_win_rate": 0.5236111111111111,
+        "median_of_cell_median_delta": -17.221346309251942,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p9__sigma_min_ratio_0p1",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p9__sigma_min_ratio_0p1"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 25,
+        "fraction_cells_median_delta_lt0": 0.5555555555555556,
+        "mean_loss_rate": 0.4763888888888888,
+        "mean_win_rate": 0.5236111111111111,
+        "median_of_cell_median_delta": -17.221346309251942,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom_k090_r010",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom_k090_r010"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 30,
+        "fraction_cells_median_delta_lt0": 0.5833333333333334,
+        "mean_loss_rate": 0.4527777777777777,
+        "mean_win_rate": 0.5472222222222222,
+        "median_of_cell_median_delta": -12.741034743210978,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:thctl_012_030",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "thctl_012_030"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 19,
+        "fraction_cells_median_delta_lt0": 0.5555555555555556,
+        "mean_loss_rate": 0.4638888888888888,
+        "mean_win_rate": 0.5361111111111112,
+        "median_of_cell_median_delta": -11.210255156388216,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:thctl_016_035",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "thctl_016_035"
+      },
+      {
+        "best_q_value": 1.1388455396113187e-11,
+        "cells_q_lt_0_05": 22,
+        "fraction_cells_median_delta_lt0": 0.6111111111111112,
+        "mean_loss_rate": 0.4229166666666666,
+        "mean_win_rate": 0.5770833333333334,
+        "median_of_cell_median_delta": -6.304632031020544,
+        "method": "proxy_sigma_controller",
+        "method_instance": "proxy_sigma_controller:geom__sigma_down_factor_0p97__sigma_min_ratio_0p05",
+        "n_cells": 36,
+        "reference_method_instance": "vanilla_cma",
+        "variant_id": "geom__sigma_down_factor_0p97__sigma_min_ratio_0p05"
+      }
+    ]
+  },
+  "warnings": []
+}

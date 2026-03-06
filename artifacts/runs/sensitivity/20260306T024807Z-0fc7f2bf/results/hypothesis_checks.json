@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "aggregate": "first",
+      "id": "sensitivity_baseline_nonpositive_delta",
+      "n_rows": 1,
+      "op": "<=",
+      "passed": true,
+      "status": "ok",
+      "threshold": 0.0,
+      "type": "metric_threshold",
+      "value": -17.221346309251942
+    },
+    {
+      "id": "sensitivity_winrate_delta_correlation",
+      "method": "pearson",
+      "n_rows": 16,
+      "n_samples": 16,
+      "op": "<=",
+      "passed": true,
+      "status": "ok",
+      "threshold": -0.2,
+      "type": "correlation_threshold",
+      "value": -0.8147512607523285
+    },
+    {
+      "aggregate": "first",
+      "id": "sensitivity_baseline_behavior_rows",
+      "lhs_n_rows": 1,
+      "lhs_value": 1440.0,
+      "op": ">",
+      "passed": true,
+      "rhs_n_rows": 1,
+      "rhs_value": 0.0,
+      "status": "ok",
+      "threshold": 0.0,
+      "type": "comparative_threshold",
+      "value": 1440.0
+    }
+  ],
+  "config_path": "experiments/config/sensitivity.yaml",
+  "created_at_utc": "2026-03-06T03:08:43.147247+00:00",
+  "summary": {
+    "n_checks": 3,
+    "n_errors": 0,
+    "n_failed": 0,
+    "n_passed": 3
+  }
+}

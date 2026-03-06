@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-03-06T03:08:40.539721+00:00",
+  "files": {
+    "behavior_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/behavior_aggregate.csv",
+    "cell_stats_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/cell_stats.csv",
+    "figure_behavior_floor": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_fraction_at_floor_bar.png",
+    "figure_behavior_ttf": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/behavior_time_to_first_floor_bar.png",
+    "figure_method_delta": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_median_delta_bar.png",
+    "figure_method_win_rate": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/figures/method_win_rate_bar.png",
+    "method_aggregate_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/method_aggregate.csv",
+    "pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma.csv",
+    "pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/pairwise_proxy_sigma_controller_geom_k090_r010_vs_vanilla_cma.json"
+  },
+  "manifest_json": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/manifest.json",
+  "reference_method_instance": "vanilla_cma",
+  "run_id": "20260306T024807Z-0fc7f2bf",
+  "runs_csv": "artifacts/runs/sensitivity/20260306T024807Z-0fc7f2bf/results/runs_long.csv",
+  "summary": {
+    "n_behavior_rows": 17,
+    "n_cell_rows": 576,
+    "n_eval_rows": 24480,
+    "n_methods": 16,
+    "n_significant_q_lt_005": 401
+  },
+  "updated_at_utc": "2026-03-06T03:08:42.262025+00:00"
+}

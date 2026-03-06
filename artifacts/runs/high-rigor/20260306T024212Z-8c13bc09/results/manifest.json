@@ -1,0 +1,35 @@
+{
+  "config_hash": "8c13bc0956d87ec6a09c2f41541a2762f71cc5729782f0d14f18ebaec178bb70",
+  "config_path": "experiments/config/high_rigor.yaml",
+  "counts": {
+    "n_cells": 36,
+    "n_eval_seeds": 100,
+    "n_methods": 2,
+    "status_by_phase": [
+      {
+        "count": 7200,
+        "phase": "eval",
+        "status": "ok"
+      }
+    ],
+    "total_runs": 7200
+  },
+  "created_at_utc": "2026-03-06T02:42:12.717983+00:00",
+  "files": {
+    "manifest_json": "artifacts/runs/high-rigor/20260306T024212Z-8c13bc09/results/manifest.json",
+    "runs_long_csv": "artifacts/runs/high-rigor/20260306T024212Z-8c13bc09/results/runs_long.csv"
+  },
+  "git_commit": "f028511",
+  "methods": [
+    "vanilla_cma",
+    "proxy_sigma_controller"
+  ],
+  "notes": {
+    "execution_mode": "sequential_only_v1",
+    "fairness_mode": "equal_eval_budget"
+  },
+  "reference_method": "vanilla_cma",
+  "run_id": "20260306T024212Z-8c13bc09",
+  "run_scope": "high_rigor_pipeline",
+  "workers": 1
+}
